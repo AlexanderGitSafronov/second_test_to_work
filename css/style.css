@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    font-family: Roboto, Arial;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+.wrapper {
+    background-color: #d9d9dc;
+}
+.container {
+    margin: 0 227px;
+}
+
+.container_leng {
+    display: flex;
+    justify-content: end;
+   margin-top: 13px;
+   margin-bottom: 18px;
+}
+.leng a {
+    text-decoration: none;
+    background-color: #f7f7f7;
+    padding: 5px 10px; 
+    color: #5f5f5f;
+    border-radius: 5px;
+    font-size: 12px;
+}
+a.active {
+    color: #fff;
+    background-color: #5f5f5f;
+}
+.leng a:hover {
+    background-color: #5f5f5f;
+    color: #fff;
+}
+.container_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    width: 20vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: #959595;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: -1%;
+}
+.logo::before {
+    content: '';
+    position: absolute;
+    width: 24vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #d9d9dc;
+    z-index: -1;
+    top: -20%;
+    left: -10%;
+}
+.links{
+    margin-top: 1.2vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.links_circle_block {
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 6.6vw;
+    
+}
+.links_circle_block:last-child {
+   margin-right: 0;
+}
+.links_circle_block  a {
+    display: inline-block;
+position: relative;
+ text-decoration: none;
+ color: #363636;
+font-size: 12px;
+
+ text-transform: uppercase;
+margin-bottom: 0.9vw;
+}
+.links_circle_block  div:last-child {
+    margin-right: 0;
+}
+
+.links_circle_block  a:hover {
+    color: #2e7193;
+}
+.links_circle_block  a::before {
+    content: '';
+    position: absolute;
+    height: 1.1vw;
+    width: 1.1vw;
+    left: -1.7vw;
+    top: -0.2vw;
+    background-color: #959595;
+    border-radius: 50%;
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0.5vw 0 0 0 ;
+    list-style: none;
+    
+  }
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 11px 28px;
+    background-color:#5f5f5f ;
+    border-right: 1px solid #959595;
+    font-size: 16px;
+    border-bottom: 3px solid #fff;
+}  
+.nav ul li a.last_nav {
+    border-right: none;
+}
+.nav a:hover {
+    opacity: 0.5;
+}
+.form {
+    height: 200px;
+}
